@@ -25,7 +25,7 @@ var links = [
     ["https://calendar.google.com/calendar/u/2/r/week","Open Google Calendar (School)","5"],
     
     ["https://youtube.com/","Open YouTube","6"],
-    
+    ["https://teacher.desmos.com/activitybuilder/custom/5f5bb4a7b6199f2812dda037","Line Calculator","7"],
     ["https://sfbrandeis.myschoolapp.com/app/student#studentmyday/assignment-center","Open WhippleHill","0"]
 ];
 
