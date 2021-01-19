@@ -99,16 +99,19 @@ html[layout="grid"] section a:nth-of-type(5n) a {
 }
 
 /* @media (hover: hover) { */
-    html[layout="grid"] section:nth-of-type(4n+1) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+1) a:hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-1);
     }
-    html[layout="grid"] section:nth-of-type(4n+2) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+2) a:hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-2);
     }
-    html[layout="grid"] section:nth-of-type(4n+3) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+3) a:hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-3);
     }
-    html[layout="grid"] section:nth-of-type(4n) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+4) a:hover {
+        box-shadow: 0 0 4px 6px var(--grid-shadow-4);
+    }
+    html[layout="grid"] section a:nth-of-type(5n) a:hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-4);
     }
 /*}*/
