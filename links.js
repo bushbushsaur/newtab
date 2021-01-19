@@ -5,19 +5,19 @@ var CTRL = 0, ALT = 1, SHIFT = 2, META = 3;
 
 var links = [
     ["https://docs.google.com/document/u/2/","Open Google Docs (School)","1"],
-    ["https://docs.google.com/document/u/2/create","Create a Google Doc (School)","1",META],
+    ["https://docs.google.com/document/u/2/create","Create a Google Doc (School)","1",ALT],
     ["https://docs.google.com/document/u/0/","Open Google Docs (Personal)","1",CTRL],
-    ["https://docs.google.com/document/u/0/create","Create a Google Doc (Personal)","1",CTRL,META],
+    ["https://docs.google.com/document/u/0/create","Create a Google Doc (Personal)","1",CTRL,ALT],
     
     ["https://docs.google.com/presentation/u/2/","Open Google Slides (School)","2"],
-    ["https://docs.google.com/presentation/u/2/create","Create a Google Slide (School)","2",META],
+    ["https://docs.google.com/presentation/u/2/create","Create a Google Slide (School)","2",ALT],
     ["https://docs.google.com/presentation/u/0/","Open Google Slides (Personal)","2",CTRL],
-    ["https://docs.google.com/presentation/u/0/create","Create a Google Slide (Personal)","2",CTRL,META],
+    ["https://docs.google.com/presentation/u/0/create","Create a Google Slide (Personal)","2",CTRL,ALT],
     
     ["https://docs.google.com/spreadsheets/u/2/","Open Google Sheets (School)","3"],
-    ["https://docs.google.com/spreadsheets/u/2/create","Create a Google Sheet (School)","3",META],
+    ["https://docs.google.com/spreadsheets/u/2/create","Create a Google Sheet (School)","3",ALT],
     ["https://docs.google.com/spreadsheets/u/0/","Open Google Sheets (Personal)","3",CTRL],
-    ["https://docs.google.com/spreadsheets/u/0/create","Create a Google Sheet (Personal)","3",CTRL,META],
+    ["https://docs.google.com/spreadsheets/u/0/create","Create a Google Sheet (Personal)","3",CTRL,ALT],
     
     ["https://drive.google.com/drive/u/2/my-drive","Open Google Drive (School)","4"],
     ["https://drive.google.com/drive/u/0/my-drive","Open Google Drive (Personal)","4",CTRL],
