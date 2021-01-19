@@ -77,19 +77,23 @@ html[layout="grid"] section a {
     overflow: hidden;
 }
 
-html[layout="grid"] section:nth-of-type(4n+1) a {
+html[layout="grid"] section a:nth-of-type(5n+1) a {
     background: var(--grid-square-1);
     color: var(--grid-color-1);
 }
-html[layout="grid"] section:nth-of-type(4n+2) a {
+html[layout="grid"] section a:nth-of-type(5n+2) a {
     background: var(--grid-square-2);
     color: var(--grid-color-2);
 }
-html[layout="grid"] section:nth-of-type(4n+3) a {
+html[layout="grid"] section a:nth-of-type(5n+3) a {
     background: var(--grid-square-3);
     color: var(--grid-color-3);
 }
-html[layout="grid"] section:nth-of-type(4n) a {
+html[layout="grid"] section a:nth-of-type(5n+4) a {
+    background: var(--grid-square-4);
+    color: var(--grid-color-4);
+}
+html[layout="grid"] section a:nth-of-type(5n) a {
     background: var(--grid-square-4);
     color: var(--grid-color-4);
 }
