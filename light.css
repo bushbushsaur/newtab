@@ -1,0 +1,32 @@
+:root {
+  --bg: #151515
+  --color: white
+  --header-color: white
+  --subheader-color: white
+  --link-color: blue
+  --link-bg: #000080
+  --link-hover-color: var(--link-color)
+  --link-hover-bg: #0000c0
+  --border: white
+  --shadow-color: white
+  --input-bg: black
+  --input-color: white
+  --button-bg: black
+  --button-color: white
+  --button-hover-bg: #404040
+  --button-hover-color: white
+  --grid-square: white
+  --grid-shadow: white
+  --grid-color: black
+  --nav-icon-shadow: black
+  --nav-icon-bg: white
+  --nav-icon-color: black
+  --nav-border: #808080
+  --nav-bg: white
+  --nav-link-color: black
+  --nav-link-hover-bg: #f0f0f0
+  --nav-link-hover-color: black
+  --nav-header-color: black
+  --nav-search-color: black
+  --nav-search-bg: white
+}
