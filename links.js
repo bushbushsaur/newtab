@@ -50,8 +50,8 @@ document.onkeydown = function(e) {
                (e.key == links[i][2]) &&
                ((e.ctrlKey == true && links[i].indexOf(CTRL) != -1) || (e.ctrlKey == false && links[i].indexOf(CTRL) == -1)) &&
                ((e.altKey == true && links[i].indexOf(ALT) != -1) || (e.altKey == false && links[i].indexOf(ALT) == -1)) &&
-               ((e.shiftKey == true && links[i].indexOf(SHIFT) != -1) || (e.shiftKey == false && links[i].indexOf(SHIFT) == -1))
-               ((e.metaKey == true && links[i].indexOf(META) != -1) || (e.metaKey == false && links[i].indexOf(META) == -1)) &&
+               ((e.shiftKey == true && links[i].indexOf(SHIFT) != -1) || (e.shiftKey == false && links[i].indexOf(SHIFT) == -1)) &&
+               ((e.metaKey == true && links[i].indexOf(META) != -1) || (e.metaKey == false && links[i].indexOf(META) == -1))
            ) {
             window.location.href = links[i][0];
         }
