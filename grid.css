@@ -77,41 +77,41 @@ html[layout="grid"] section a {
     overflow: hidden;
 }
 
-html[layout="grid"] section a:nth-of-type(5n+1) a {
+html[layout="grid"] section a:nth-of-type(5n+1) {
     background: var(--grid-square-1);
     color: var(--grid-color-1);
 }
-html[layout="grid"] section a:nth-of-type(5n+2) a {
+html[layout="grid"] section a:nth-of-type(5n+2) {
     background: var(--grid-square-2);
     color: var(--grid-color-2);
 }
-html[layout="grid"] section a:nth-of-type(5n+3) a {
+html[layout="grid"] section a:nth-of-type(5n+3) {
     background: var(--grid-square-3);
     color: var(--grid-color-3);
 }
-html[layout="grid"] section a:nth-of-type(5n+4) a {
+html[layout="grid"] section a:nth-of-type(5n+4) {
     background: var(--grid-square-4);
     color: var(--grid-color-4);
 }
-html[layout="grid"] section a:nth-of-type(5n) a {
+html[layout="grid"] section a:nth-of-type(5n) {
     background: var(--grid-square-4);
     color: var(--grid-color-4);
 }
 
 /* @media (hover: hover) { */
-    html[layout="grid"] section a:nth-of-type(5n+1) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+1):hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-1);
     }
-    html[layout="grid"] section a:nth-of-type(5n+2) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+2):hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-2);
     }
-    html[layout="grid"] section a:nth-of-type(5n+3) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+3):hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-3);
     }
-    html[layout="grid"] section a:nth-of-type(5n+4) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n+4):hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-4);
     }
-    html[layout="grid"] section a:nth-of-type(5n) a:hover {
+    html[layout="grid"] section a:nth-of-type(5n):hover {
         box-shadow: 0 0 4px 6px var(--grid-shadow-4);
     }
 /*}*/
