@@ -31,9 +31,16 @@ var links = [
 
 for (var i = 0;i < links.length;i++) {
     var link = document.createElement("a");
-    link.innerHTML = "<h3></h3>";
+    link.innerHTML = "<h3></h3><p></p>";
     link.setAttribute("href",links[i][0]);
     link.querySelector("h3").textContent = links[i][1];
+    link.querySelector("p").textContent =
+        "Shortcut: " +
+        (links[i].indexOf(CTRL) != -1 ? "Ctrl+" : "") +
+        (links[i].indexOf(ALT) != -1 ? "Alt+" : "") +
+        (links[i].indexOf(SHIFT) != -1 ? "Shift+" : "") +
+        (links[i].indexOf(META) != -1 ? "Meta+" : "") +
+        links[i][2];
     section.insertAdjacentElement("beforeend",link);
 }
 
@@ -43,8 +50,8 @@ document.onkeydown = function(e) {
                (e.key == links[i][2]) &&
                ((e.ctrlKey == true && links[i].indexOf(CTRL) != -1) || (e.ctrlKey == false && links[i].indexOf(CTRL) == -1)) &&
                ((e.altKey == true && links[i].indexOf(ALT) != -1) || (e.altKey == false && links[i].indexOf(ALT) == -1)) &&
-               ((e.metaKey == true && links[i].indexOf(META) != -1) || (e.metaKey == false && links[i].indexOf(META) == -1)) &&
                ((e.shiftKey == true && links[i].indexOf(SHIFT) != -1) || (e.shiftKey == false && links[i].indexOf(SHIFT) == -1))
+               ((e.metaKey == true && links[i].indexOf(META) != -1) || (e.metaKey == false && links[i].indexOf(META) == -1)) &&
            ) {
             window.location.href = links[i][0];
         }
