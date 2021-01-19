@@ -1,0 +1,30 @@
+body:not([width="full"]) {
+    --width: 1000px;
+    
+    width: min(var(--width),calc(100% - 16px));
+    margin: 8px calc(50% - min(var(--width),100% - 16px) / 2);
+}
+
+body[width="tiny"] {
+    --width: 235px;
+}
+
+body[width="small"] {
+    --width: 490px;
+}
+
+body[width="medium"] {
+    --width: 745px;
+}
+
+body[width="normal"] {
+    --width: 1000px;
+}
+
+body[width="large"] {
+    --width: 1200px;
+}
+
+body[width="giant"] {
+    --width: 1500px;
+}
