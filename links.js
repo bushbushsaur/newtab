@@ -1,3 +1,5 @@
+window.focus();
+
 var section = document.querySelector("section");
 var CTRL = 0, ALT = 1, SHIFT = 2, META = 3;
 
@@ -33,4 +35,18 @@ for (var i = 0;i < links.length;i++) {
     link.setAttribute("href",links[i][0]);
     link.querySelector("h3").textContent = links[i][1];
     section.insertAdjacentElement("beforeend",link);
+}
+
+document.onkeydown = function(e) {
+    for (var i = 0;i < links.length;i++) {
+        if (
+               (e.key == links[i][2]) &&
+               ((e.ctrlKey == true && links[i].indexOf(CTRL) != -1) || (e.ctrlKey == false && links[i].indexOf(CTRL) == -1)) &&
+               ((e.altKey == true && links[i].indexOf(ALT) != -1) || (e.altKey == false && links[i].indexOf(ALT) == -1)) &&
+               ((e.metaKey == true && links[i].indexOf(META) != -1) || (e.metaKey == false && links[i].indexOf(META) == -1)) &&
+               ((e.shiftKey == true && links[i].indexOf(SHIFT) != -1) || (e.shiftKey == false && links[i].indexOf(SHIFT) == -1))
+           ) {
+            window.location.href = links[i][0];
+        }
+    }
 }
